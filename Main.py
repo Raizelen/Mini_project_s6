@@ -5,6 +5,7 @@ from dotenv import load_dotenv #to enviroment variables e.g. API
 import help
 import greetings
 import gif
+import openAi
 
 load_dotenv()
 # environment variables
@@ -33,6 +34,12 @@ async def on_message(message):
         await greetings.handle_gm(message)
     elif message.content.startswith("!gn"):
         await greetings.handle_gn(message)
+# Open AI
+
+    elif message.content.startswith("!ask"):
+        await openAi.handle_ask(message)
+    elif message.content.startswith("!img"):
+        await openAi.handle_img(message)
 
 # gifs
     elif message.content.startswith("!gif"):
