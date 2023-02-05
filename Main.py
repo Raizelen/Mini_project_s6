@@ -25,8 +25,9 @@ async def on_ready():
 async def on_message(message):
 
 # greetings
-
-    if message.content.startswith("!hello"):
+    if message.content.startswith("!help"):
+        await help.handle_Help(message)
+    elif message.content.startswith("!hello"):
         await greetings.handle_hello(message)
     elif message.content.startswith("!gm"):
         await greetings.handle_gm(message)
