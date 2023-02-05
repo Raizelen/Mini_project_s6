@@ -22,7 +22,7 @@ sends good night to the user mentioned
 <br />
 ***!gif :***
 search gif
-***!weather <city>:***
+***!weather<cityName>:***
 Displays the weather of the city ☀️
 <br />
 ***!ask:***
