@@ -1,0 +1,2 @@
+# VENUSX 
+# a discord bot
