@@ -1,5 +1,13 @@
-import discord
+import discord                  #discord functions
+import os                       #to use env
+from dotenv import load_dotenv #to enviroment variables e.g. API
+# modules
 import greetings
+
+load_dotenv()
+# environment variables
+discord_api = os.getenv("discord_bot_api")
+
 
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
@@ -18,4 +26,4 @@ async def on_message(message):
 
 # ******************** end of code
 
-client.run("MTA3MDY0OTIyMzE1MTg5MDQ4Mg.GDopQd.TsBQkrn-ooTYODzGOdA6fnbU5m3gZczJduuwA0")
+client.run(discord_api)
