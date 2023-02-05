@@ -5,7 +5,6 @@
 This project is currently in development.
 
 ### BOT COMMANDS ###
-<br />
 ***!help :***
 display the help menu
 <br />
