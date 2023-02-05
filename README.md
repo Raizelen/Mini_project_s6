@@ -1,5 +1,5 @@
 # VENUSX 
- a discord bot developed using python
+ a discord bot developed using python.
  
-#Project Status
+# PROJECT STATUS
 This project is currently in development.
