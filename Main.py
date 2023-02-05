@@ -2,6 +2,7 @@ import discord                  #discord functions
 import os                       #to use env
 from dotenv import load_dotenv #to enviroment variables e.g. API
 # modules
+import help
 import greetings
 import gif
 
