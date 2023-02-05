@@ -6,6 +6,7 @@ import help
 import greetings
 import gif
 import openAi
+import weather
 
 load_dotenv()
 # environment variables
@@ -44,6 +45,9 @@ async def on_message(message):
 # gifs
     elif message.content.startswith("!gif"):
         await gif.handle_gif(message)
+#weather
+    elif message.content.startswith("!weather"):
+        await weather.handle_Weather(message)
 
 
 
