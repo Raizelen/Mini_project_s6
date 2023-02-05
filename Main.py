@@ -3,6 +3,7 @@ import os                       #to use env
 from dotenv import load_dotenv #to enviroment variables e.g. API
 # modules
 import greetings
+import gif
 
 load_dotenv()
 # environment variables
@@ -17,10 +18,24 @@ client = discord.Client(intents=intents)
 async def on_ready():
     print("Bot is ready.")
 
+# COMMANDS
+
 @client.event
 async def on_message(message):
+
+# greetings
+
     if message.content.startswith("!hello"):
-        await message.channel.send("Hello!")
+        await greetings.handle_hello(message)
+    elif message.content.startswith("!gm"):
+        await greetings.handle_gm(message)
+    elif message.content.startswith("!gn"):
+        await greetings.handle_gn(message)
+
+# gifs
+    elif message.content.startswith("!gif"):
+        await gif.handle_gif(message)
+
 
 
 
