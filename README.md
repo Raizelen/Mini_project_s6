@@ -5,13 +5,17 @@
 This project is currently in development.
 
 ### BOT COMMANDS ###
-** !help. 
+**!help.** 
 display the help menu
-** !hello
+<br />
+**!hello**
 says hello to the user mentioned
-** !gm
+<br />
+**!gm**
 sends good morning to the user mentioned
-** !gn
+<br />
+**!gn**
 sends good night to the user mentioned
-** !gif
+<br />
+**!gif**
 search gif
