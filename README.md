@@ -22,3 +22,12 @@ sends good night to the user mentioned
 <br />
 ***!gif :***
 search gif
+***!weather <city>:***
+Displays the weather of the city ☀️
+<br />
+***!ask:***
+Gives assistance from bot
+<br />
+***!img:***
+Generate image using DALLA-E
+<br />
