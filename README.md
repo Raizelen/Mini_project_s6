@@ -9,26 +9,26 @@ To invite bot use the link : https://discord.com/api/oauth2/authorize?client_id=
 
 ### BOT COMMANDS ###
 ***!help :***
-display the help menu
+display the help menu 🧙‍♂️📄
 <br />
 ***!hello :***
-says hello to the user mentioned
+says hello to the user mentioned🙋‍♀️
 <br />
 ***!gm :***
-sends good morning to the user mentioned
+sends good morning to the user mentioned🌇🏙
 <br />
 ***!gn :***
-sends good night to the user mentioned
+sends good night to the user mentioned🌆🌃
 <br />
 ***!gif :***
-search gif
+search gif 🕵🖼
 <br />
 ***!weather<cityName>:***
-Displays the weather of the city ☀️
+Displays the weather of the city ☀️🌧
 <br />
 ***!ask:***
-Gives assistance from bot
+Gives assistance from bot 🧙‍♂️🤖
 <br />
 ***!img:***
-Generate image using DALLA-E
+Generate image using DALLA-E ⚙️🖼
 <br />
