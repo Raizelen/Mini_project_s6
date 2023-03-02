@@ -9,7 +9,5 @@ async def handle_ytd(message):
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         print(link)
         ydl.download([link])
-    loc=os.getcwd()#+r'\video'
-    with open(loc, "rb") as mp4:
-        await message.channel.send(file=discord.File(mp4))
+
 
