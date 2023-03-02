@@ -17,7 +17,7 @@ async def handle_ask(message):
         max_tokens=1024,
         n=1,
         stop=None,
-        temperature=0.7,
+        temperature=0.7, #temperature is the randoness of text generation
     )
 
     response = completions.choices[0].text
