@@ -2,3 +2,4 @@ requests
 discord.py 
 python-dotenv
 openai
+youtube_dl

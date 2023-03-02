@@ -7,6 +7,7 @@ import greetings
 import gif
 import openAi
 import weather
+import yt
 
 load_dotenv()
 # environment variables
@@ -25,9 +26,10 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-
+    if message.content.startswith("!ping"):
+        await handle_ping(message) 
 # greetings
-    if message.content.startswith("!help"):
+    elif message.content.startswith("!help"):
         await help.handle_Help(message)
     elif message.content.startswith("!hello"):
         await greetings.handle_hello(message)
@@ -48,7 +50,15 @@ async def on_message(message):
 #weather
     elif message.content.startswith("!weather"):
         await weather.handle_Weather(message)
+#yt
+    elif message.content.startswith("!ytd"):
+        await yt.handle_ytd(message)
 
+#***** system func
+
+async def handle_ping(message):
+    pong=round((client.latency * 1000),2) 
+    await message.channel.send(f'My ping is {pong}ms!')
 
 
 
